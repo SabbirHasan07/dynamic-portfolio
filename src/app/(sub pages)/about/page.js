@@ -5,6 +5,7 @@ import RenderModel from "@/components/RenderModel";
 import AboutDetails from "@/components/about";
 import dynamic from "next/dynamic";
 import sabbir from "../../../../public/background/profile-pic.png"
+import ItemLayout from "@/components/about/ItemLayout";
 const HatModel = dynamic(() => import("@/components/models/HatModel"), {
   ssr: false,
 });
@@ -38,6 +39,17 @@ export default function Home() {
           <p className="font-light text-foreground text-2xl">
             Software Engineer
           </p>
+          <ItemLayout
+            className={"col-span-full xs:col-span-6 lg:col-span-4 text-accent mt-8"}
+          >
+            
+              <p className="font-semibold w-full text-left text-2xl sm:text-5xl">
+                1+{" "}
+                <sub className="font-semibold text-base">years of experience</sub>
+              </p>
+            
+
+          </ItemLayout>
           {/* <div className="mt-9">
             <Image
               src={sabbir}
