@@ -1,6 +1,6 @@
 import React from "react";
 import ItemLayout from "./ItemLayout";
-import Link from "next/link";
+
 
 const AboutDetails = () => {
   return (
@@ -42,7 +42,56 @@ const AboutDetails = () => {
           </p>
         </ItemLayout>
 
-       
+        {/** experience */}
+        <ItemLayout className={"col-span-full flex flex-col gap-4"}>
+          <p className="text-xl md:text-2xl">Professional Experience</p>
+          <div className="md:xl mb-6">
+            <p>Software Engineer(Intern), Astha IT.</p>
+            <p className="text-center">2024, Mar - 2024, Jun</p>
+          </div>
+          <div>
+            <h1>Tech Used</h1>
+            <hr />
+          </div>
+          <div className="w-full flex justify-between">
+            <div>
+              <h1>Frontend</h1>
+              <p>Next JS, TypeScript, Zustand, Tanstack query, Material UI, Tailwind CSS.</p>
+              <h1 className="mt-6">Backend</h1>
+              <p>C#, ASP.Net Core Web Api, postgresql.</p>
+              <p className="mt-6">
+                * Designed and implemented the Registration, Sidebar Layout, and Profile,
+              </p>
+              <p className="ml-3"> Dashboard, Messages with major sections of LawGurdPro Application.</p>
+              <p className="mt-6">
+                * Enabling capabilities with optimized performance and advanced functio-
+              </p>
+              <p className="ml-3"> nality by integrating third-party APIs.</p>
+              <p className="mt-6">
+                * Acquired proficiency in DevOps, OOP, SDLC, and Git.
+              </p>
+            </div>
+            <div>
+              <img
+                className="w-[140px] mr-4 mb-8 mt-4"
+                src={`https://skillicons.dev/icons?i=nextjs,typescript,materialui,tailwindcss`}
+                alt="CodeBucks"
+                loading="lazy"
+
+              />
+              <img
+                className="w-[100px] mr-4 mb-8 mt-4"
+                src={`https://skillicons.dev/icons?i=cs,dotnet,postgresql`}
+                alt="CodeBucks"
+                loading="lazy"
+
+              />
+            </div>
+          </div>
+
+        </ItemLayout>
+
+
 
         {/** forntend-Development */}
 
@@ -51,7 +100,7 @@ const AboutDetails = () => {
           <div className="lg:flex w-full lg:justify-between">
             <div>
               <h1 className="text-xs sm:text-sm md:text-base mb-4 text-center">Programming Language</h1>
-              <hr className="mb-6"/>
+              <hr className="mb-6" />
               <img
                 className="w-50 mb-8"
                 src={`https://skillicons.dev/icons?i=typescript,javascript`}
@@ -61,7 +110,7 @@ const AboutDetails = () => {
             </div>
             <div>
               <h1 className="text-xs sm:text-sm md:text-base mb-4 text-center">Tech Stack</h1>
-              <hr className="mb-6"/>
+              <hr className="mb-6" />
               <img
                 className="w-50 mb-8"
                 src={`https://skillicons.dev/icons?i=nextjs,react,html,css,tailwindcss,bootstrap,materialui`}
@@ -71,7 +120,7 @@ const AboutDetails = () => {
             </div>
             <div>
               <h1 className="text-xs sm:text-sm md:text-base mb-4 text-center">Tools</h1>
-              <hr className="mb-6"/>
+              <hr className="mb-6" />
               <img
                 className="w-50 mb-8"
                 src={`https://skillicons.dev/icons?i=vscode,github,vercel`}
@@ -80,7 +129,7 @@ const AboutDetails = () => {
               />
             </div>
           </div>
-        </ItemLayout>   
+        </ItemLayout>
       </div>
     </section>
   );
