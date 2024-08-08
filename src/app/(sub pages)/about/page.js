@@ -4,6 +4,7 @@ import RenderModel from "@/components/RenderModel";
 // import HatModel from "@/components/models/HatModel";
 import AboutDetails from "@/components/about";
 import dynamic from "next/dynamic";
+import sabbir from "../../../../public/background/profile-pic.png"
 const HatModel = dynamic(() => import("@/components/models/HatModel"), {
   ssr: false,
 });
@@ -29,14 +30,24 @@ export default function Home() {
         </RenderModel>
       </div>
 
-      <div className="relative w-full h-screen flex flex-col items-center justify-center">
+      <div className="relative w-full h-screen flex flex-col items-center justify-center mt-7">
         <div className="absolute flex flex-col items-center text-center top-1/2 sm:top-[60%] left-1/2 -translate-y-1/2 -translate-x-1/2">
-          <h1 className="font-bold  text-6xl xs:text-7xl sm:text-8xl  lg:text-9xl text-accent">
-            CodeBucks
+          <h1 className="font-bold  text-6xl xs:text-7xl sm:text-8xl  lg:text-6xl text-accent">
+            SABBIR HASAN
           </h1>
-          <p className="font-light text-foreground text-lg">
-            Meet the wizard behind this portfolio
+          <p className="font-light text-foreground text-2xl">
+            Software Engineer
           </p>
+          {/* <div className="mt-9">
+            <Image
+              src={sabbir}
+              priority
+              sizes="100vw"
+              height={50}
+              width={200}
+              alt=""
+            />
+          </div> */}
         </div>
       </div>
 
