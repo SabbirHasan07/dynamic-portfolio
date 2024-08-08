@@ -60,20 +60,18 @@ const AboutDetails = () => {
               <h1 className="mt-6">Backend</h1>
               <p>C#, ASP.Net Core Web Api, postgresql.</p>
               <p className="mt-6">
-                * Designed and implemented the Registration, Sidebar Layout, and Profile,
+                * Designed and implemented the Registration, Sidebar Layout, and Profile, Dashboard, Messages.
               </p>
-              <p className="ml-3"> Dashboard, Messages with major sections of LawGurdPro Application.</p>
               <p className="mt-6">
-                * Enabling capabilities with optimized performance and advanced functio-
+                * Enabling capabilities with optimized performance and advanced functionality by integrating third-party APIs.
               </p>
-              <p className="ml-3"> nality by integrating third-party APIs.</p>
               <p className="mt-6">
                 * Acquired proficiency in DevOps, OOP, SDLC, and Git.
               </p>
             </div>
             <div>
               <img
-                className="w-[140px] mr-4 mb-8 mt-4"
+                className="w-[120px] mr-4 mb-8 mt-4"
                 src={`https://skillicons.dev/icons?i=nextjs,typescript,materialui,tailwindcss`}
                 alt="CodeBucks"
                 loading="lazy"
@@ -97,7 +95,7 @@ const AboutDetails = () => {
 
         <ItemLayout className={"col-span-full flex flex-col gap-4"}>
           <p className="text-xl md:text-2xl">Frontend Development</p>
-          <div className="lg:flex w-full lg:justify-between">
+          <div className="lg:flex w-full lg:justify-between ">
             <div>
               <h1 className="text-xs sm:text-sm md:text-base mb-4 text-center">Programming Language</h1>
               <hr className="mb-6" />
@@ -129,6 +127,75 @@ const AboutDetails = () => {
               />
             </div>
           </div>
+        </ItemLayout>
+        <ItemLayout
+          className={
+            " col-span-full lg:col-span-8 row-span-2 flex-col items-center"
+          }
+        >
+          <h2 className="  text-xl md:text-2xl text-left w-full capitalize text-center">
+            Backend Developer
+          </h2>
+          <div className="lg:flex lg:justify-between gap-24">
+            <div>
+              <h1 className="text-xs sm:text-sm md:text-base mb-4 text-center">Programming Language</h1>
+              <hr className="mb-6" />
+              <img
+                className="w-[34px] mb-8"
+                src={`https://skillicons.dev/icons?i=cs`}
+                alt="CodeBucks"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <h1 className="text-xs sm:text-sm md:text-base mb-4 text-center">Tech Stack</h1>
+              <hr className="mb-6" />
+              <img
+                className="w-40 mb-8"
+                src={`https://skillicons.dev/icons?i=npm,nodejs,expressjs,dotnet`}
+                alt="CodeBucks"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <h1 className="text-xs sm:text-sm md:text-base mb-4 text-center">Tools</h1>
+              <hr className="mb-6" />
+              <img
+                className="w-28 mb-8"
+                src={`https://skillicons.dev/icons?i=vscode,visualstudio,git`}
+                alt="CodeBucks"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </ItemLayout>
+        <ItemLayout
+          className={" col-span-full xs:col-span-6 lg:col-span-6 flex flex-col"}
+        >
+          <h1 className="lg:text-2xl sm:text-xl"> Database</h1>
+          <div>
+            <img
+              className="w-[130px] mb-8"
+              src={`https://skillicons.dev/icons?i=mongodb,postgres,mysql`}
+              alt="CodeBucks"
+              loading="lazy"
+            />
+          </div>
+
+        </ItemLayout>
+        <ItemLayout
+          className={" col-span-full xs:col-span-6 lg:col-span-2 flex flex-col"}
+        >
+          <h1 className="lg:text-2xl sm:text-xl">Tools</h1>
+          <div>
+            <img
+              className="w-[150px] mb-8"
+              src={`https://skillicons.dev/icons?i=postman,git,github`}
+              alt="CodeBucks"
+              loading="lazy"
+            />
+          </div>
+
         </ItemLayout>
       </div>
     </section>
